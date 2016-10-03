@@ -24,15 +24,20 @@ app.controller('mainController', function($scope) {
         }
         // Function to change font color on hover
     $scope.changeColor = function() {
-            // console.log("Testing hover");
+        // console.log("Testing hover");
 
+    }
+    var exclaimation = angular.element(document.querySelector("h1"));
+
+    $scope.exclaim = function() {
+            exclaimation.append("!");
         }
         // Function to manipulate links
     $scope.verify = function() {
         $scope.noGoingBack = confirm("Are you sure you want to continue to this site?");
         if (!$scope.noGoingBack) {
             event.preventDefault();
-            return $scope.noGoingBack = true;
+            event.target.remove();
         };
     };
 });
