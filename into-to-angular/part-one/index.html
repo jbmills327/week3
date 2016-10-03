@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>intro-to-angularjs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+
+
+<body ng-controller="mainController">
+
+    <button type="button" class="btn btn-primary clickBait" ng-click="logging()">CLICK </button>
+    <h1 ng-show="myVar">{{message}}</h1>
+    <button type="button" class="btn btn-danger toggle" ng-click="toggle()">Click Me</button>
+    <ul ng-show="anotherVar">
+        <li>{{listItem1}}</li>
+        <li>{{listItem2}}</li>
+        <li>{{listItem3}}</li>
+    </ul>
+    <p ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-class="{pinkStuff:hover}">{{filler}} {{filler}}</p>
+    <p ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-class="{pinkStuff:hover}">{{filler}}{{filler}}</p>
+    <div id="test" ng-hide="noGoingBack">
+        <a href="http://www.nick.com/ninja-turtles/" ng-click="verify()">TMNT</a>
+    </div>
+    <div id="testTwo" ng-hide="noGoingBack">
+        <a href="http://www.warnerbros.com/archive/spacejam/movie/jam.htm" ng-click="verify()">Space Jam</a>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
