@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+    <head>
+        <meta charset="utf-8">
+        <title>intro-to-angularjs-part-deux</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="mainTwo.css" type="text/css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    </head>
+
+    <body ng-controller="MainController">
+        <div class="buttonNonsense">
+            <button type="button" class="btn btn-large btn-primary bigButton" ng-click="toggle()" ng-hide = "hideThePopUp">This is a button</button>
+        </div>
+
+        <div class="crazyPopUp" ng-show="hideThePopUp">
+            <h1>This is a crazy popUp!</h1>
+            <button type="button" class="btn btn-lg btn-danger bigButton" ng-click = "toggle()">Lock it Up!</button>
+        </div>
+
+        <script type="text/javascript" src="mainTwo.js"></script>
+    </body>
+
+</html>
