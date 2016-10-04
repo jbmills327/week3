@@ -11,13 +11,17 @@
     <title>Edit-In-Place</title>
 </head>
 
-<body ng-controller="MainController">
-    <div class="holdMyStuff">
-        <h1>This is stuff</h1>
+<body ng-controller="MainCtrl as main">
 
+
+    <div class="holdMyStuff">
+        <h3>Name:</h3>
+        <h4 ng-hide="main.name" type="button" ng-click="main.runThis()">{{ main.namePeople }}</h4>
+        <input ng-model="main.namePeople" type="text" ng-show="main.name" ng-keypress="main.enterKey($event)">
+        <h3>Age:</h3>
     </div>
-    <script type="text/javascript" src="myScripts.js">
-    </script>
+
+    <script type="text/javascript" src="myScripts.js"></script>
 </body>
 
 </html>
