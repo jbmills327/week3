@@ -19,6 +19,11 @@
         <h4 ng-hide="main.name" type="button" ng-click="main.runThis()">{{ main.namePeople }}</h4>
         <input ng-model="main.namePeople" type="text" ng-show="main.name" ng-keypress="main.enterKey($event)">
         <h3>Age:</h3>
+        <h4 ng-hide="main.name" type="button" ng-click="main.runThis()">{{ main.nameAge }}</h4>
+        <input ng-model="main.nameAge" type="text" ng-show="main.name" ng-keypress="main.enterKey($event)">
+        <h3>Favorite Care Bear:</h3>
+        <h4 ng-hide="main.name" type="button" ng-click="main.runThis()">{{ main.favoriteCareBear }}</h4>
+        <input ng-model="main.favoriteCareBear" type="text" ng-show="main.name" ng-keypress="main.enterKey($event)">
     </div>
 
     <script type="text/javascript" src="myScripts.js"></script>

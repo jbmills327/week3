@@ -1,5 +1,6 @@
 body {
     position: relative;
+    background-color: lightblue;
 }
 
 .holdMyStuff {
@@ -7,4 +8,16 @@ body {
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: lightblue;
+    text-align: center;
+}
+
+h3 {
+    font-family: impact;
+}
+
+h4 {
+    color: red;
+    font-family: fantasy;
+    font-size: 25px;
 }
