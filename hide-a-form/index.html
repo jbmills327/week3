@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <title></title>
+</head>
+
+<body ng-controller="MainCtrl as main">
+    <!-- <button type="button" class="btn btn-primary center" ng-click="main.hideTheForm()" ng-hide="main.formBox">
+        submit
+    </button> -->
+    <div class="center holdTheForm">
+        <!-- ng-hide="main.formBox" -->
+
+        <form class="" action="index.html" method="post" ng-submit="hideTheForm()">
+            <h4>First Name: </h4>
+            <input type="text" name="firsrName" value="" ng-model="main.personName">
+            <h4>Bio: </h4>
+            <textarea rows="4" cols="50" ng-model="main.personBio"></textarea>
+            <h4>Favorite Books: </h4>
+            <input type="text" name="firsrName" value="" ng-model="main.personBook">
+            <h4>Favorite Javascript Library: </h4>
+            <input type="text" name="firsrName" value="" ng-model="main.personLibrary">
+
+        </form>
+    </div>
+
+    <div class="profileStuff center" ng-show="main.formBox">
+        <h3>Hello, my name is: </h3>
+        <h4 class="redText">{{ main.personName }}</h4>
+        <h4>Here is a little bit about me: </h4>
+        <p class="redText">{{ main.personBio }}</p>
+        <h4>My facorite book is: </h4>
+        <p class="redText">{{ main.personBook }}</p>
+        <h4>My favorite Javascript library is: </h4>
+        <p class="redText">{{ main.personLibrary }}</p>
+        <button type="button" class="btn btn-danger" ng-show="main.formBox" ng-click="main.hideTheForm()">
+          Edit Info
+        </button>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="myScripts.js"></script>
+</body>
+
+</html>

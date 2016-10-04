@@ -1,0 +1,25 @@
+body {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.holdTheForm {
+    left: 20%;
+}
+
+.profileStuff {
+    color: blue;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+.redText {
+    color: red;
+}
