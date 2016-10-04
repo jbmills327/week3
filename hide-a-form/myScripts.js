@@ -8,10 +8,14 @@ function mainController() {
     main.personBio = "";
     main.personBook = "";
     main.personLibrary = "";
+    main.text = "Hello";
+    main.personArray = [];
 
     main.hideTheForm = function() {
-        // console.log("This is working");
-        // main.formBox = !main.formBox;
-        main.personName = "";
+        main.formBox = !main.formBox;
+
     }
+
+
+
 }

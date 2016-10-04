@@ -10,15 +10,15 @@
 </head>
 
 <body ng-controller="MainCtrl as main">
-    <!-- <button type="button" class="btn btn-primary center" ng-click="main.hideTheForm()" ng-hide="main.formBox">
+    <button type="button" class="btn btn-primary center" ng-click="main.hideTheForm()" ng-hide="main.formBox">
         submit
-    </button> -->
+    </button>
     <div class="center holdTheForm">
-        <!-- ng-hide="main.formBox" -->
 
-        <form class="" action="index.html" method="post" ng-submit="hideTheForm()">
+
+        <form class="" action="index.html" method="post" ng-hide="main.formBox">
             <h4>First Name: </h4>
-            <input type="text" name="firsrName" value="" ng-model="main.personName">
+            <input type="text" name="firsrName" value="" ng-model="main.personName" />
             <h4>Bio: </h4>
             <textarea rows="4" cols="50" ng-model="main.personBio"></textarea>
             <h4>Favorite Books: </h4>
@@ -42,6 +42,8 @@
           Edit Info
         </button>
     </div>
+
+
 
 
 
