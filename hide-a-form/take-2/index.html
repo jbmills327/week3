@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <title>Hide a Form Take 2</title>
+</head>
+
+<body ng-controller="MainCtrl as main">
+
+    <form class="profileStuff" ng-submit="main.submit()">
+        <h4>First Name: </h4>
+        <input type="text" name="name" ng-model="main.name" />
+        <h4>Bio: </h4>
+        <textarea rows="4" cols="50" ng-model="main.bio"></textarea>
+        <h4>Favorite Book: </h4>
+        <input type="text" name="name" ng-model="main.book">
+        <h4>Favorite javascript library: </h4>
+        <input type="text" name="name" ng-model="main.library">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+    <div class="profile">
+        <h4>{{ main.name }}</h4>
+        <h4>{{ main.bio }}</h4>
+        <h4>{{ main.book }}</h4>
+        <h4>{{ main.library }}</h4>
+
+    </div>
+
+    <!-- <form ng-submit="main.submit()">
+        Enter text and hit enter:
+        <input type="text" ng-model="main.text" name="text" />
+        <input type="submit" id="submit" value="Submit" />
+        <pre>list={{main.list}}</pre>
+    </form> -->
+
+    <script type="text/javascript" src="myScripts.js">
+    </script>
+</body>
+
+</html>
