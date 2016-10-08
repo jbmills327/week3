@@ -82,6 +82,7 @@ function vowels(word) {
 console.log(vowels("What evil odd ducks"));
 
 
+
 // This function iterates through an array and determines if the pairs equal each other.
 
 function twins(arr) {
@@ -99,3 +100,40 @@ function twins(arr) {
 }
 
 console.log(twins(["a", "a", "b", "b", "d", "c", "d", "d"]));
+
+
+
+// This function will determine if an array contains a value of true or not
+function or(arr) {
+    var newArray = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == true) {
+            newArray.push(arr[i]);
+
+        }
+    }
+    if (typeof newArray !== 'undefined' && newArray.length > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(or([false, false, false]));
+
+
+function unique(arr) {
+    var newArray = arr.sort();
+    var anotherArray = [];
+    for (var i = 0; i < newArray.length; i++) {
+        if (newArray[i] != newArray[i + 1]) {
+            anotherArray.push(newArray[i]);
+        }
+
+    }
+    return anotherArray;
+
+
+}
+
+console.log(unique(['a', 'b', 'a', 'c', 'd', 'd']));
